@@ -9,8 +9,8 @@
     "db:migrate": "npx drizzle-kit migrate",
     "db:studio": "npx drizzle-kit studio",
     "db:migrate:test": "dotenv -e .env.test -- drizzle-kit migrate",
-    "pretest": "pnpm run db:migrate:test",
-    "pretest:watch": "pnpm run db:migrate:test",
+    "pretest": "npm run db:migrate:test",
+    "pretest:watch": "npm run db:migrate:test",
     "test": "dotenv -e .env.test -- vitest run",
     "test:watch": "dotenv -e .env.test -- vitest"
   },
